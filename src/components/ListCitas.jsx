@@ -14,12 +14,9 @@ const ListCitas = () => {
     dispatch(consulApiAction())
   },[])
 
-  console.log(resultC)
-  console.log("HOLA")
-
   return (
     <>
-
+      
 
     </>
   )
