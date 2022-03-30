@@ -1,0 +1,29 @@
+@media(max-width:1600px){
+    .header--title{
+        margin-left: 14rem;
+    }
+}
+
+@media(max-width:1000px){
+    .header--title{
+        margin-left: 12rem;
+    }
+}
+
+@media(max-width:600px){
+    .header--title{
+        margin-left: 7rem;
+    }
+}
+.header--menu{
+    text-align: center;
+    font-size: 1.2rem;
+    background-color:#337ef0;
+    padding-bottom: -.5rem;
+}
+.header--menu li{
+    display: inline-block;
+    margin: 0rem 1rem;
+
+    color: white;
+}

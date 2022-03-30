@@ -9,8 +9,11 @@ import {
 import Citas from './pages/Citas'
 import Veterinarios from './pages/Veterinarios'
 import Home from './pages/Home.jsx';
+import { Provider } from 'react-redux';
+import store from './redux/store'
 
 ReactDOM.render(
+  <Provider store={store}>
   <React.StrictMode>
    <Router>
      <Routes>
@@ -22,5 +25,6 @@ ReactDOM.render(
      </Routes>
    </Router>
   </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
