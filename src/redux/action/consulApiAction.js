@@ -9,8 +9,7 @@ export function consulApiAction(){
         try {
             const resultC = await axios.get(`http://localhost:3004/citas/miscitas`);
             if(resultC.data){
-                dispatch(consultaSuccess(resultC))
-                console.log(resultC)
+                dispatch(consultaSuccess(resultC.data?.citas))
             }
         } catch (error) {
             dispatch(consultaError(error.result))
